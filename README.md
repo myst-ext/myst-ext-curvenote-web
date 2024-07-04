@@ -13,13 +13,13 @@ This package is published on `npm` and holds a MyST Markdown plugin for use on c
 
 To install the plugin in your MyST project:
 
-1. Download the javascript module (`web.mjs`) from [https://unpkg.com/myst-ext-web@1.0.0/dist/web.mjs](https://unpkg.com/myst-ext-web@1.0.0/dist/web.mjs) and save this in your project folder
+1. Download the javascript module (`curvenote-web.mjs`) from [https://unpkg.com/myst-ext-curvenote-web@1.0.0/dist/curvenote-web.mjs](https://unpkg.com/myst-ext-curvenote-web@1.0.0/dist/curvenote-web.mjs) and save this in your project folder
 1. Add the module to the list of plugins in `myst.yml`:
 
 ```yaml
 project:
   plugins:
-    - web.mjs
+    - curvenote-web.mjs
 ```
 
 The plugin will be loaded when you next run `myst start`
@@ -66,7 +66,7 @@ Then add roles and directives to your pages.
 This repo builds the plugin and it's dependencies into a single javascript module bundle using `tusp`.
 
 1. clone this repo
-1. `cd myst-ext-web`
+1. `cd myst-ext-curvenote-web`
 1. `npm install`
 1. `npm build`
 
