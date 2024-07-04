@@ -1,0 +1,70 @@
+{
+  "name": "myst-ext-curvenote-web",
+  "version": "1.0.0",
+  "description": "Awesome Website Components for MyST Markdown by Curvenote",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./dist/curvenote-web.mjs",
+      "types": "./dist/curvenote-web.d.ts"
+    },
+    "./react": {
+      "default": "./dist/react/index.js",
+      "types": "./dist/react/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:plugin": "tsup",
+    "build:react": "tsc --project tsconfig.react.json",
+    "build": "npm run build:plugin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myst-ext/myst-ext-curvenote-web.git"
+  },
+  "keywords": [
+    "website",
+    "hero",
+    "footer",
+    "myst markdown",
+    "markdown"
+  ],
+  "author": "Steve Purves <steve@curvenote.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myst-ext/myst-ext-curvenote-web/issues"
+  },
+  "homepage": "https://github.com/myst-ext/myst-ext-curvenote-web#readme",
+  "dependencies": {
+    "@curvenote/common": "^0.1.41",
+    "@curvenote/footers": "^0.1.41",
+    "@jupyterlab/nbformat": "^4.2.3",
+    "@lumino/coreutils": "^2.2.0",
+    "@myst-theme/providers": "^0.9.8",
+    "@myst-theme/site": "^0.9.8",
+    "@scienceicons/react": "^0.0.11",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lodash.throttle": "^4.1.1",
+    "lucide-react": "^0.400.0",
+    "myst-common": "^1.4.7",
+    "myst-spec-ext": "^1.4.7",
+    "myst-to-react": "^0.9.8",
+    "p-limit": "^5.0.0",
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0",
+    "tailwind-merge": "^2.3.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3",
+    "unist-builder": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0"
+  }
+}
