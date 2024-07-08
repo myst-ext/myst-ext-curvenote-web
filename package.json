@@ -41,7 +41,7 @@
     "url": "https://github.com/myst-ext/myst-ext-curvenote-web/issues"
   },
   "homepage": "https://github.com/myst-ext/myst-ext-curvenote-web#readme",
-  "dependencies": {
+  "devDependencies": {
     "@curvenote/common": "^0.1.41",
     "@curvenote/footers": "^0.1.41",
     "@jupyterlab/nbformat": "^4.2.3",

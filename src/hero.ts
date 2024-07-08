@@ -3,7 +3,7 @@ import { createId, normalizeLabel, fileError } from 'myst-common';
 import { noBooleans } from './utils.js';
 
 export const heroDirective = {
-  name: 'cn:hero',
+  name: 'hero',
   doc: 'An hero unit with a an optional background image. This will render as a block in any myst theme but can be upgraded to richer hero unit in themes that have specialized renderers for blocks with `kind: hero`.',
   alias: ['banner'],
   arg: { type: String, doc: 'The main title to display in the hero unit' },

@@ -4,7 +4,7 @@ import { selectAll } from 'unist-util-select';
 import { noBooleans } from './utils.js';
 
 export const footerDirective = {
-  name: 'cn:footer',
+  name: 'footer',
   doc: 'An configurable site footer with a logo, tagline, and links.',
   options: {
     logo: { type: String, doc: 'URL of the logo' },
