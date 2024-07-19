@@ -45,17 +45,66 @@ myst start
 
 Then add roles and directives to your pages.
 
-- Hero
-- Footers
-
-** TODO: document**
-
 > [!TIP]
 > MyST Markdown's plugin loading system is still developing, [look out for updates](https://mystmd.org/guide/plugins) on easier ways to access and load plugins.
 
 ### Directive Usage
 
-**TODO: Options**
+#### Hero
+
+<dl>
+<dt>{arg}</dt>
+<dd>(MyST) The main title to display in the hero unit</dd>
+<dt>tagline</dt>
+<dd>(MyST) A tagline to display under the main title</dd>
+<dt>description</dt>
+<dd>(MyST) A longer description to display under the tagline</dd>
+<dt>background-image</dt>
+<dd>(File|String) URL or local path to the background image</dd>
+<dt>background-color</dt>
+<dd>(String) Background color of the hero unit (e.g. #aabbcc)</dd>
+<dt>text-color</dt>
+<dd>(String) Text color within the hero unit (e.g. #aabbcc)</dd>
+<dt>layout</dt>
+<dd>(String) Layout of the hero unit (default: `center`), (values:`left`, `center`, `right`)</dd>
+<dt>padding</dt>
+<dd>(String) Padding around the hero unit using a css padding string like `1rem` or `1rem 2rem`</dd>
+<dt>cta-title</dt>
+<dd>(String) Text for the first call to action button</dd>
+<dt>cta-url</dt>
+<dd>(String) URL for the first call to action button</dd>
+<dt>cta-title-1</dt>
+<dd>(String) Text for the second call to action button</dd>
+<dt>cta-url-1</dt>
+<dd>(String) URL for the second call to action button</dd>
+<dt>cta-style</dt>
+<dd>Style of the call to action button (default: `light`), (values: `light`, `dark`)</dd>
+</dl>
+
+#### Footer
+
+<dl>
+<dt>logo</dt>
+<dd>(File|String) URL or local path to the logo</dd>
+<dt>logo-dark</dt>
+<dd>(File|String) URL or local path to the dark mode logo</dd>
+<dt>logo-title</dt>
+<dd>(String) Title of the logo, used as alt text</dd>
+<dt>logo-url</dt>
+<dd>(String) URL to navigate to when the logo is clicked</dd>
+<dt>tagline</dt>
+<dd>(MyST) A tagline to display under the logo</dd>
+<dt>padding</dt>
+<dd>(String) Padding around the hero unit using a css padding string like `1rem` or `1rem 2rem`</dd>
+<dt>background-color</dt>
+<dd>(String) Background color of the footer (e.g. #aabbcc)</dd>
+<dt>text-color</dt>
+<dd>(String) Text color of the footer (e.g. #aabbcc)</dd>
+<dt>copyright</dt>
+<dd>(String|MyST) Text to display at the very bottom of the footer, typically a copyright statement</dd>
+<dt>{body}</dt>
+<dd>(MyST) The body of the footer should contain links in the form of a list with up to 2 nested lists. Links with [`scienceicon` roles](https://www.npmjs.com/package/@scienceicons/myst) as their titles will be picked up as social icons.</dd>
+</dl>
 
 ### React Component Usage
 
